@@ -8,10 +8,10 @@ from keras.models import Sequential
 from keras.utils import pad_sequences
 
 ##loading the ann model
-model = keras.models.load_model(r'C:\Users\yener\OneDrive\Desktop\neuralnetworks\ann_model')
+model = keras.models.load_model("ann_model/ann_model")
 
 ## load the copy of the dataset
-df = pd.read_csv(r'C:\Users\yener\OneDrive\Desktop\neuralnetworks\emails.csv')
+df = pd.read_csv("emails.csv")
 
 ## set page configuration
 st.set_page_config(page_title = 'Email Classifier', layout = 'wide')
@@ -21,8 +21,8 @@ st.title('Email Classifier using Artificial Nerual Network')
 st.write('Please Enter an email to be classified:')
 
 ## add image
-image = Image.open(r"C:\Users\yener\OneDrive\Desktop\neuralnetworks\spam.jpg")
-st.image(image, use_column_width = True)
+image = Image.open("spam.jpg")
+st.image(image, use_column_width=True)
 
 ## get user input
 email_text = st.text_input('Email Text:')
