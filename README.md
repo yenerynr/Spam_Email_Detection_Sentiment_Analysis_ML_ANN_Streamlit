@@ -9,3 +9,7 @@ streamlit front end app for predictions
 thanks
 
 yener yalciner
+
+the steamlit front end app link :
+
+https://yenerynr-spam-email-detection-sentiment-analysis-app-ann-6b6kpg.streamlit.app/
