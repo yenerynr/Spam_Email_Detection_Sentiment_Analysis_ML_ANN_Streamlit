@@ -7,8 +7,7 @@ from keras.models import Sequential
 #from keras_preprocessing.sequence import pad_sequences
 from keras.utils import pad_sequences
 
-##loading the ann model
-model = keras.models.load_model("ann_model/ann_model")
+model = keras.models.load_model("ann_model")
 
 ## load the copy of the dataset
 df = pd.read_csv("emails.csv")
